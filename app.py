@@ -11,7 +11,8 @@ import io
 # ------------------ CONFIG ------------------
 app = Flask(__name__)
 
-MODEL_PATH = r'C:\Users\HP\Desktop\Major\aah\my_cnn_model.h5'
+MODEL_PATH = 'my_cnn_model.h5'
+
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
