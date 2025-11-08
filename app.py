@@ -4,8 +4,10 @@ import numpy as np
 from PIL import Image
 import tempfile
 import os
+from flask_cors import CORS 
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load TensorFlow Lite model once (lazy loading)
 TFLITE_MODEL_PATH = "my_cnn_model.tflite"
